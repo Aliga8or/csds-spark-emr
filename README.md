@@ -64,3 +64,8 @@ The: 1<br>
 perilous: 1<br>
 
 - You're encouraged to play around with the code, check out the documentation and try things out
+
+#### Terminate the cluster
+- Don't forget to terminate your cluster after you're done
+- You'll need to follow the same steps next time you create a new cluster with the exception of creating private key for SSH, you can use the same private key for all clusters
+- Also make sure to allow inbound SSH traffic on the master every time your machine changes IP, which might happen when you switch between WiFi networks
