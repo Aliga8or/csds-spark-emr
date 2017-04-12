@@ -9,7 +9,7 @@
 
 ![img](http://imgur.com/Ed6DlBS.jpg)
 
-The cluster remains in the 'Starting' state for about 10 - 15 minutes. Once the cluster is ready for use, the status will change to 'Waiting'. The cluster is now ready to use.
+- The cluster remains in the 'Starting' state for about 10 - 15 minutes. Once the cluster is ready for use, the status will change to 'Waiting'. You can now go ahead and use it.
 
 #### Create private key for ssh access
 - Click on "Learn how to create an EC2 key pair" to create and modify your EC2 key pair.
@@ -39,7 +39,8 @@ The cluster remains in the 'Starting' state for about 10 - 15 minutes. Once the 
 
 #### Executing wordcount.py
 - Go through the code in wordcount.py and checkout what it does
-- Execute the script using "spark-submit wordcount.py"
+- Execute the script using "spark-submit wordcount.py | tee output.txt"
+- This will also generate output.txt with a copy of the logs on your s3 bucket
 - You should see the result of your code among other logs, should look like
 
 And: 2<br>
