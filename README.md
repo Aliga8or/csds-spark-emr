@@ -40,7 +40,8 @@
 #### Executing wordcount.py
 - Go through the code in wordcount.py and checkout what it does
 - Execute the script using "spark-submit wordcount.py | tee output.txt"
-- This will also generate output.txt with a copy of the logs on your s3 bucket
+- This will also generate output.txt with a copy of the logs
+- You may have the output file copied to your s3 bucket by using the cmd "aws s3 cp output.txt s3://my_bucket/my_folder/"
 - You should see the result of your code among other logs, should look like
 
 And: 2<br>
